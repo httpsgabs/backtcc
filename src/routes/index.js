@@ -36,7 +36,7 @@ routes.get("/teste", (req, res, next) => {
   res.status(200).send("Teste de mensagem").end();
 });
 
-// routes.use("/api/*", Usuarios.signup);
+//routes.use("/api/*", Usuarios.signup);
 //routes.use("/api/*", Usuarios.ensureAuthenticated);
 
 // routes.use(Usuarios.ensureAuthenticated);
