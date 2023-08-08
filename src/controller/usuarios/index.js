@@ -23,7 +23,7 @@ class Usuarios {
   }
 
   async store(req, res, next) {
-    /*let usuarioSchema = object({
+    let usuarioSchema = object({
       usu_nome: string().required("Entre com o nome do usuário"),
       usu_email: string()
         .email("Entre com um e-mail válido")
@@ -36,8 +36,6 @@ class Usuarios {
         ),
       usu_nivel: mixed(["admin", "comum"], "Tipo de usuário incorreto")
     });
-
-    console.write(req.body)
 
     !req.body?.usu_nivel && (req.body = { ...req.body, usu_nivel: "comum" });
     !req.body?.usu_celular && (req.body = { ...req.body, usu_celular: "" });
@@ -64,7 +62,9 @@ class Usuarios {
     try {
       await usuarioSchema.validate(req.body);
     } catch (error) {
-      return res.status(400).end({ error: error.message });
+      //return res.status(400).json({ error: error.message });
+      return res.status(400).send({error: error.message}).end();
+      //return res.status(400).end({ error: error.message });
     }
 
     const usuario = apiEndpoints.db
@@ -76,8 +76,7 @@ class Usuarios {
     if (usuario) {
       return res.status(400).send({ error: "usuário já cadastrado " }).end();
     }
-    next();*/
-    next()
+    next();
   }
 
   async update(req, res, next) {
