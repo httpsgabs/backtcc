@@ -69,6 +69,21 @@
       "created_at": "2023-08-09T11:01:50.488Z",
       "updated_at": "2023-08-09T11:01:52.932Z",
       "id": 5
+    },
+    {
+      "usu_nome": "Usuário 13:25:11",
+      "usu_email": "nada@nada.com",
+      "usu_senha": "U1234u!",
+      "usu_nivel": "comum",
+      "usu_celular": "",
+      "usu_cpf": "",
+      "usu_foto": "",
+      "usu_chave": "TxBKHSCar0",
+      "usu_emailconfirmado": false,
+      "usu_cadastroativo": false,
+      "created_at": "2023-08-24T16:25:44.983Z",
+      "updated_at": "",
+      "id": 6
     }
   ],
   "projetos": [
@@ -141,6 +156,19 @@
       "pro_inicio": "2021-02-11T08:26:34Z",
       "created_at": "2021-02-06T01:22:47Z",
       "updated_at": "2021-02-13T23:28:11Z"
+    },
+    {
+      "pro_titulo": "Projeto 0211",
+      "created_at": "2023-08-17T16:39:52.000Z",
+      "updated_at": "",
+      "id": 11
+    },
+    {
+      "pro_titulo": "Projeto 0211",
+      "pro_inicio": "2023-08-17T16:39:52.000Z",
+      "created_at": "2023-08-17T17:00:50.957Z",
+      "updated_at": "",
+      "id": 12
     }
   ],
   "usuariosprojetos": [
